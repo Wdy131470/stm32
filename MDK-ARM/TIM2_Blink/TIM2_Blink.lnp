@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"tim2_blink\startup_stm32f103xb.o"
+"tim2_blink\main.o"
+"tim2_blink\gpio.o"
+"tim2_blink\tim.o"
+"tim2_blink\stm32f1xx_it.o"
+"tim2_blink\stm32f1xx_hal_msp.o"
+"tim2_blink\stm32f1xx_hal_gpio_ex.o"
+"tim2_blink\stm32f1xx_hal_tim.o"
+"tim2_blink\stm32f1xx_hal_tim_ex.o"
+"tim2_blink\stm32f1xx_hal.o"
+"tim2_blink\stm32f1xx_hal_rcc.o"
+"tim2_blink\stm32f1xx_hal_rcc_ex.o"
+"tim2_blink\stm32f1xx_hal_gpio.o"
+"tim2_blink\stm32f1xx_hal_dma.o"
+"tim2_blink\stm32f1xx_hal_cortex.o"
+"tim2_blink\stm32f1xx_hal_pwr.o"
+"tim2_blink\stm32f1xx_hal_flash.o"
+"tim2_blink\stm32f1xx_hal_flash_ex.o"
+"tim2_blink\stm32f1xx_hal_exti.o"
+"tim2_blink\system_stm32f1xx.o"
+--strict --scatter "TIM2_Blink\TIM2_Blink.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "TIM2_Blink.map" -o TIM2_Blink\TIM2_Blink.axf
